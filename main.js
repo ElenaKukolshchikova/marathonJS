@@ -17,6 +17,8 @@ const player2 = {
     }
 }
 
+const $arenas = document.querySelector('.arenas');
+
 function createPlayer(playerClass, playerName, playerHp, playerImg) {
     const $player1 = document.createElement('div');
     $player1.classList.add(playerClass);
@@ -41,8 +43,7 @@ function createPlayer(playerClass, playerName, playerHp, playerImg) {
     $life.style.width = playerHp + '%';
     $name.innerText = playerName;
     $img.src = playerImg;
-    
-    const $arenas = document.querySelector('.arenas');
+
     $arenas.appendChild($player1);
 
 };
